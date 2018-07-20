@@ -58,10 +58,16 @@ Kimberly L. Stachenfeld, Matthew M. Botvinick & Samuel J. Gershman
 - 조금만 구체적으로 보자
 
   - 강화학습에서는 일반적으로 현재 state에 대한 value를 미래에 주어질 모든 보상의 감가합(Expected discounted reward, c.f. temporal difference learning)으로 정의함 --> Eq. 1
+  
+  ![Eq1](figures/nn.4650-M1.gif)
 
   - Eq. 1은 reward func과 predictive representation of the state (i.e. SR)의 내적으로 decompose 가능 --> Eq. 2
+  
+  ![Eq2](figures/nn.4650-M2.gif)
 
   - SR은 current state에서 이동 가능한 경로(Eq. 3에서 Ⅱ 함수로 검사)에 포함되는 future states들을 인코딩함 --> Eq. 3
+  
+  ![Eq3](figures/nn.4650-M3.gif)
 
   - 이건 Supplementary Figure 17을 봐야 좀 이해 가능할 듯
 
