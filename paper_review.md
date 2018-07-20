@@ -81,6 +81,8 @@ Kimberly L. Stachenfeld, Matthew M. Botvinick & Samuel J. Gershman
   - value func을 SR term과 reward term으로 factoring 하여 model-based 방법들에 써먹을 수 있는 유연함을 가짐
   - state dynamics와 reward term을 분리함으로써 새로운 가치 함수들의 빠른 재계산을 state dynamics를 재학습하지 않고 할 수 있게 됨
   - 예를 들어 Figure 1과 같은 계산이 가능하다
+  
+  ![Fig1](figures/nn.4650-F1.jpg)
 
  
 
@@ -105,6 +107,8 @@ Kimberly L. Stachenfeld, Matthew M. Botvinick & Samuel J. Gershman
 - 장애물이 없는 2차원 환경에서 place cell은 원 형태의 서서히 감쇠하는 형태의 firing field를 가지는데, 같은 환경에서는 SR place fields도 동일한 양상을 보인다.
 
   - 동물이 random walk 할 때 먼저 방문하게 될 위치는 현재 위치로부터 먼 위치가 아닌 가까운 위치이기 때문
+  
+  ![Fig2](figures/nn.4650-F2.jpg)
 
 - Euclidean Gaussian v.s. Geodesic v.s. SR (간단한 예측 실험, Figure 2a-c)
 
@@ -118,6 +122,8 @@ Kimberly L. Stachenfeld, Matthew M. Botvinick & Samuel J. Gershman
 
   - 개체가 Goal로 향하는 중 각 state에서의 SR 발화 정도를 보면, 목표에서 멀리 있을 때에는 forward-skewing이고, 목표에 가까워지면서 backward-skewing이 됨.
   - Figure 3에서의 쥐 실험에서도 편향된 backward-skewing이 관측됨
+  
+  ![Fig3](figures/nn.4650-F3.jpg)
 
 - Tolman detour maze 시뮬레이션(Figure 3c-h)
 
@@ -140,6 +146,8 @@ Kimberly L. Stachenfeld, Matthew M. Botvinick & Samuel J. Gershman
   - experimental factor (gamma값)를 변경하면서 실험해봤음
   - Supplementary figures 3~6 참고
   - discount factor (gamma) 의 변화는 temporal abstraction의 multiple levels에 따른 의사 결정에 유용하게 쓰일 수 있을 듯함
+  
+  ![Fig4](figures/nn.4650-F4.jpg)
 
 - Hippocampal representation in nonspatial task (Figure 4a-d)
 
@@ -147,6 +155,8 @@ Kimberly L. Stachenfeld, Matthew M. Botvinick & Samuel J. Gershman
   - Shapiro et al. (2016)의 실험에서는 인간 피험자들이 임의로 생성된 프랙탈 이미지 시퀀스를 볼 때의 brain activity를 fMRI로 계측했는데, 클러스터를 반영하는 hippocampal pattern similarity를 발견함.
   - SR 모델은 이 발견을 재현
   - 최근 비슷한 fMRI 실험 결과가 Garvert et al. (2017)에 의해 제시되었는데, hippocampus가 nonspatial/relational task에서 다음에 이어질 successor를 표상하는 아이디어를 지지하는 결과임. 결론은 successor model이 킹왕짱임.
+  
+  ![Fig5](figures/nn.4650-F5.jpg)
 
 - Integrating spatial and temporal coding (Figure 5)
 
@@ -174,8 +184,11 @@ Kimberly L. Stachenfeld, Matthew M. Botvinick & Samuel J. Gershman
 
 - SR 고유벡터 모델은 이러한 현상이 geometry에서 transition policy가 변화하기 때문에 발생하는 것으로 설명할 수 있음.
 
+![Fig6](figures/nn.4650-F6.jpg)
+
 - Hairpin maze에서 실험해보니 spatial correlation을 보이는 체커보드 패턴이 확인되었으며, SR 고유벡터 모델도 유사한 결과를 나타냄.
 
+![Fig7](figures/nn.4650-F7.jpg)
  
 
 ### Subgoal Discovery using Grid Fields
